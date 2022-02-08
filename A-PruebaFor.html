@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+        -curso final-
+        </title>
+        
+        <link href="A-Pruebaestilo.css" rel="stylesheet" style="text/css">
+        <link href="style.css" rel="stylesheet" style="text/css">
+        <script src="b-validacion.js"></script>
+        <!--biblioteca JQuery-->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    </head>
+
+                <!--empieza el formulario                Se separa en 5 partes-->
+
+<body class="diseño-completo"> 
+  
+
+<header class="header">
+
+    <h1>Formulario de afiliacion</h1>
+    <h2>No hay obligacion de compra</h2>
+
+</header>
+
+
+
+
+<nav class="navbar"> nuestro auspiciantes
+    <img src="Fail.jpg" width="180px" height="180px">
+    <img src="Lowcost.jpg" width="180px" height="180px">
+    <img src="Pumba.jpg" width="180px" height="180px">
+</nav>
+
+<aside class="sidebar"> estaba reservado para el mapa de google </aside>
+
+
+                    <!--parte principal del form-->
+
+<article class="main">
+<div class="seccion-3">
+    <div class="context">
+        <h1></h1>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    
+    
+<form action="registro.php" method="post" class="fomr-a" onsubmit="return valida()">
+<div class="contenedor-inputs">
+
+<div class="container">
+<input type="text" placeholder=" Nombre" class="container__input" id="nombre" name="nombre" minlength="5" maxlength="20" > 
+<label class="container__label" for="nombre">Nombre</label>
+
+</br>
+<input type="text" placeholder=" Apellido" class="container__input" id="apellido" name="apellido" minlength="2" maxlength="20" >
+<label class="container__label" for="apeliido">Apellido</label>
+
+
+</br>
+
+<input type="text" placeholder="Documento" class="container__input" id="dni" name="dni" minlength="1" maxlength="11" >
+<label class="container__label" for="dni">Documento de identidad</label>
+
+</br>
+<input type="date" class="container__input" id="fecha" name="fecha" min="1930-01-01" onchange="calEdad()"> 
+<label class="container__label" for="fecha">Fecha</label>
+<label id="lbedad">años</label>
+
+<!--<input type="number" placeholder="Dia" class="container__input" id="dia" name="dia" maxlength="2" required>
+<label class="container__label" for="dia">Dia</label>
+
+<input type="number" placeholder="Mes" class="container__input" id="mes" name="mes" maxlength="2" required>
+<label class="container__label" for="mes">Mes</label>
+
+<input type="number" placeholder="Año" class="container__input" id="año" name="año"  maxlength="4" required>
+<label class="container__label" for="año">Año</label>-->
+
+
+</br>
+
+<input type="text" placeholder="Domilicio" class="container__input" id="domicilio" name="domicilio" minlength="10" maxlength="50" >
+<label class="container__label" for="domicilio">Domilicio</label>
+
+</br>
+
+<input type="number" placeholder="Telefono" class="container__input" id="telefono" name="telefono" minlength="1" maxlength="11" >
+<label class="container__label" for="telefono">Telefono</label>
+
+</br>
+
+<input type="email" placeholder="Correo" class="container__input" id="correo" name="correo" minlength="8" maxlength="40" >
+<label class="container__label" for="correo">Correo Electronico</label>
+
+</br>
+
+
+<label for="ciudad"><strong>Ciudad</strong></label>
+<select class="inputs" id="ciudad" name="ciudad" onchange="habilitarprovincia()">
+                <option value="-1">seleccione su ciudad</option>
+                <option value="1">General Pico</option>
+                <option value="2">Speluzzi</option>
+                <option value="3">Dorila</option>
+                <option value="4">Metileo</option>
+                <option value="5">Vertiz</option>
+                    </select></br>    
+
+
+        
+<label for="provincia"><strong>Provincia</strong></label>
+<select class="inputs" id="provincia" name="provincia" disabled onchange="habilitarpais()"> 
+                <option value="-1">seleccione su Provincia</option>
+                <option value="1">La Pampa</option>
+                <option value="2">San Luis</option>
+                <option value="3">Neuquen</option>
+                <option value="4">Rio Negro</option>
+                <option value="5">Santa Fe</option>
+                        </select></br>    
+<label for="pais"><strong>Pais</strong></label>
+<select class="inputs" id="pais" name="pais" disabled>
+                <option value="-1">seleccione su Pais</option>
+                <option value="1">Argentina</option>
+                <option value="2">Republica de Cordoba</option>
+                <option value="3">Capital Federal</option>
+                <option value="4">Brasil</option>
+                <option value="5">Colombia</option>">
+                    </select></br>     
+
+ <br>
+    <label>Subir foto</label>
+    <input type="file" class="container__input">
+    
+</br>
+
+
+<input type="submit" value="Registrar" id="btn-submit">
+
+</div>
+</div>    
+</form>
+
+</article> <!--cierra el main-->
+
+
+<footer class="footer">estaba reservado para el reCaptcha </footer>
+
+</div>
+
+
+</body>
+            
+
+
+
+
+
+
